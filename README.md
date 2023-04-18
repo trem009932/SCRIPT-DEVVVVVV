@@ -1,6 +1,6 @@
 if game.PlaceId == 13822889 then
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Bless Hub |  DEV", IntroText = "Bless Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Bless Hub"})
+	local Window = OrionLib:MakeWindow({Name = "Bless Hub | V 1.0", IntroText = "Bless Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Bless Hub"})
 	
 	local PlayerTab = Window:MakeTab({
 		Name = "Player",
@@ -381,10 +381,7 @@ if game.PlaceId == 13822889 then
 		  end    
 	})
 	
-		local Section = DupeTab:AddSection({
-		Name = "Timer"
-	})
-	
+	DupeTab:AddParagraph("Timer","Use the timer to time your dupes")
 	DupeTab:AddButton({
 		Name = "Timer",
 		Callback = function()

@@ -1,6 +1,6 @@
 if game.PlaceId == 13822889 then
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Bless Hub | V 1.0", IntroText = "Bless Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Bless Hub"})
+	local Window = OrionLib:MakeWindow({Name = "Bless Hub | V 1.5", IntroText = "Bless Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Bless Hub"})
 	
 	local PlayerTab = Window:MakeTab({
 		Name = "Player",
@@ -188,7 +188,6 @@ if game.PlaceId == 13822889 then
 		wait(0.9)
 		for i,v in next, game:GetService("Workspace").Properties:GetChildren() do
 			if v:FindFirstChild("Owner") and v.Owner.Value == nil then
-			game:GetService("ReplicatedStorage").PropertyPurchasing.ClientPurchasedProperty:FireServer(v,v.OriginSquare.Position)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame + Vector3.new(0,2,0)
 			break
 			end
@@ -209,7 +208,6 @@ if game.PlaceId == 13822889 then
 	
 	mouse.KeyDown:connect(function(key)
 	if key == bind then
-		repeat wait()until game.Players.LocalPlayer.PlayerGui.PropertyPurchasingGUI.SelectPurchase.Visible;
 		wait(1)
 		wait(2)
 		task.wait(timetotp - 2)

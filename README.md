@@ -1,6 +1,6 @@
 if game.PlaceId == 13822889 then
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	local Window = OrionLib:MakeWindow({Name = "Bless Hub | V 1.5", IntroText = "Bless Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Bless Hub"})
+	local Window = OrionLib:MakeWindow({Name = "Bless Hub | ADMIN", IntroText = "Bless Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Bless Hub"})
 	
 	local PlayerTab = Window:MakeTab({
 		Name = "Player",
@@ -400,6 +400,7 @@ if game.PlaceId == 13822889 then
 		  end    
 	})
 	
+	
 	--World
 	local WorldTab = Window:MakeTab({
 		Name = "World",
@@ -422,11 +423,99 @@ if game.PlaceId == 13822889 then
 		end    
 	})
 	
+		--tp
+	    
+	    
+	local TpTab = Window:MakeTab({
+		Name = "Tp",
+		Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+	})
+	    
+		TpTab:AddButton({
+		Name = "Frost wood",
+		Callback = function()
+		     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1489.247, 447.275, 3298.598)
+		  end    
+	})	
 	
+		TpTab:AddButton({
+		Name = "Palm wood",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2624.676, 3.125, -29.149)
+		  end    
+	})
 	
-	
-	
-	
+		TpTab:AddButton({
+		Name = "Cavecrawler",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3364.518, -214.718, 494.73)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "Gold Wood",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1055.272, -2.875, -885.696)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "Swamp Wood",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1025.859, 133.626, -1175.548)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "Lava Wood",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1595.384, 626.025, 1053.488)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "End Time Wood",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-41.259, -212.6, -1351.794)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "land store",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(268.097, 4.225, -98.357)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "woodrus",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(251.219, 6.83, 57.381)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "Boxed Cars",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(510.255, 4.69, -1488.946)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "Furniture Store",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(491.1, 3.5, -1690.1)
+		  end    
+	})
+		
+		TpTab:AddButton({
+		Name = "Shack Shop",
+		Callback = function()
+		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(249.599, 8.168, -2539.08)
+		  end    
+	})
+
 	--info 
 	local InfoTab = Window:MakeTab({
 		Name = "Info",
